@@ -1,0 +1,178 @@
+/************Header***********/
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  padding: 25px;
+  text-align: center;
+  z-index: 20;
+}
+
+.header h3{
+  font-weight: 300;
+}
+
+.logo{
+  height: 80px;
+}
+
+.data-img{
+  width: 180px;
+  height: auto;
+}
+
+.burger{
+  width: 30px;
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  .data-cube{
+    display: inline;
+  }
+  
+  .logo{
+    height: 70px;
+  }
+  
+  #contact-data{
+    display: none;
+  }
+}
+
+@media all and (max-width: 750px) {  
+  /*.menu{
+    display: none;
+  }*/
+  
+  #moto{
+    display: none;
+  }
+  
+  .logo{
+    height: 50px;
+  }
+  
+  .header{
+    padding: 10px;
+  }
+  
+  .burger{
+    display: block;
+    position: fixed;
+    left: 20;
+    top: 23;
+  }
+}
+
+/************Menu***********/
+
+.menu{
+  position: fixed;
+  top: 125px;
+  left: 0px;
+  right: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  -webkit-user-select: none;
+  z-index: 20;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.24);;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+  display: inline;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.menu li:hover{
+  color: #b2b2b2;
+}
+
+.menu a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.selected{
+  color: #212121 !important;
+}
+
+@media all and (max-width: 750px) {  
+  .menu{
+    position: fixed;
+    top: 70px;
+    bottom: 0px;
+    left: -300px;
+    width: 250px;
+    text-align: left;
+  }
+  
+  .menu li{
+    display: inherit;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  
+  .menu li:active{
+    background: #FF4080;
+  }
+  
+  .main-container{
+    top: 70px !important; 
+    height: calc(100% - 70px) !important;
+  }
+}
+
+/************Miscellaneous***********/
+.data-cube{
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.hiden{
+  display: none;
+}
+
+/************Container************/
+
+.main-container{
+  position: fixed;
+  z-index: 0;
+  top: 160px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: calc(100% - 160px);
+}
+
+.main-container object{
+  width: 100%;
+  height: 100%;
+}
+
+/************Footer***************/
+
+.footer{
+  width: 100%;
+  height: 120px;
+  font-size: initial;
+}

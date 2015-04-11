@@ -1,0 +1,250 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
+
+.main-color-bg{
+  /*background: #13426b;*/
+  background: #1976D2;
+}
+  
+.mid-color-bg{
+  /*background: #3f77aa*/
+  background: #2196F3;
+}
+  
+.lite-color-bg{
+  /*background: #9ab6d4;*/
+  background: #BBDEFB;
+}
+
+.contrast-bg{
+  background: #FF4081;
+}
+
+.neutral-hard-bg{
+  background: #212121;
+}
+
+.neutral-mid-bg{
+  background: #727272
+}
+  
+.neutral-soft-bg{
+  background: #b6b6b6 
+}
+
+.white-bg{
+  background: #fff;
+}
+
+.text-white{
+  color: white;
+}
+
+.text-gray{
+  color: #6a6a6a;
+}
+
+.text-blue{
+  color: #13426b;
+}
+
+.primary-text{
+  color: #212121;
+}
+
+.secondary-text{
+  color: #727272;
+}
+
+.pink-text{
+  color: #FF4081;
+}
+
+.divider{
+  color: #B6B6B6;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+
+.row{
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;   
+}
+
+.cell{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.center{
+  text-align: center;
+}
+
+.circle-medium{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.circle-flex{
+  width: 120px;
+  height: 120px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  border-radius: 50%;
+}
+
+.medium-footer{
+  width: 120px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.gap{
+  height: 500px;
+}
+
+.gap-small{
+  height: 400px;
+}
+
+.gap-full{
+  height: calc(100%-100px;);
+}
+
+@media all and (max-width: 750px) {  
+  .gap{
+    height: 585px;
+  }
+}
+
+.flex-wrap{
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  z-index: 2;
+}
+
+.flex-foot{
+  position: relative;
+  width: 100%;
+  padding: 25px;
+  font-size: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  z-index: 2;
+}
+
+.footer{
+  width: 100%;
+  height: 120px;
+  font-size: initial;
+  z-index: 3;
+}
+
+.btn {
+  position: relative;
+
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(236, 240, 241, .3);
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.btn-md-pink {
+  background-color: #FF4080;
+}
+
+.btn-md-pink:hover{
+  background: #FF1262;
+}
+
+.btn-md-pink:focus {
+  background-color: #FF4080;
+}
+
+.btn-md-facebook {
+  background-color: #3b5998;
+}
+
+.btn-md-facebook:hover{
+  background: #8b9dc3;
+}
+
+.btn-md-facebook:focus {
+  background-color: #3b5998;
+}
+
+.btn.red {
+  background-color: #e74c3c;
+}
+
+.btn.red:hover, .btn.red:focus {
+  background-color: #c0392b;
+}

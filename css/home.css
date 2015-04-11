@@ -1,0 +1,72 @@
+.bg{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background: purple;
+}
+
+.image-header{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  bottom: 0px;
+  z-index: 1;
+  text-align: center !important;
+  background: #b6b6b6;
+}
+
+
+.image-center{
+  width: 100%;
+}
+
+.mover{
+  z-index: 10;
+}
+
+.column-full{
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.shadow-firs{
+  box-shadow: 10px 10px 10px red;
+}
+
+#text-chicha{
+  position: fixed;
+  padding: 50px;
+  top: 80px;
+  left: 40px;
+  z-index: 2;
+  font-size: 70px;
+  font-weight: 800;
+  max-width: 700px;
+}
+
+#img-chicha{
+  width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    
+  #img-chicha{
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    width: auto;
+  }
+  
+  #text-chicha{
+    top: 300px;
+    left: 0px;
+    font-size: 50px;
+  }
+} 
+
