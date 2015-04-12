@@ -37,15 +37,17 @@ session_start();
           <br/>
           <span id="tel_user">56581111</span>
           <br/>
-          <span id="mail_user">sofia@mail.com</span>
+          <span id="mail_user"><?php echo $_SESSION['EMAIL']; ?></span>
         </div>
 
 
 
-<form ng-submit="sendfile()" name="uploadForm" enctype="multipart/form-data">
-    <input name="file" type="file" id="file" file-model="fileToUpload" />
-    <input name="somethingINeed" type="submit" value="Subir" />
-</form>
+        <form id="subirImg" name="subirImg" enctype="multipart/form-data" method="post" action="upload.php">
+        <label for="imagen">Por favor sube una imagen de  tu IFE :</label>
+        <input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
+        <input type="file" name="imagen" id="imagen" />
+        <input type="submit" name="subirBtn" id="subirBtn" value="Subir imagen" />
+        </form>
 
 
 </ul></div></div>
