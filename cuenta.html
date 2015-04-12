@@ -5,6 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/wrapper.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <link rel="stylesheet" type="text/css" href="css/cuenta.css">
+    
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/animation-handler.css">
 
     <link rel="stylesheet" href="res/font-awesome/css/font-awesome.min.css">
 
@@ -22,13 +25,13 @@
         <div class="row center">
           <h1>Cuenta Hacker</h1>
 
-          <div class="cell center text-cell">
+          <div class="cell center text-cell wow fadeIn">
               Es la cuenta de depósito bancarío en moneda nacional más innovadora del mercado.
 
               Convierte tu celular en tu propia cartera electrónica, te permite disponer de efectivo, realizar pagos y transferencias sin pisar una sucursal bancaria.
           </div>
 
-          <div class="cell">
+          <div class="cell wow fadeIn">
             <img src="res/img/card.png" style="width: 250px;">
           </div>
 
@@ -39,7 +42,7 @@
         <div class="row center">
 
 
-          <div class="cell text-cell">
+          <div class="cell text-cell wow zoomIn motion-one">
             <h1>Descripción </h1>
             <ul style="text-align: left !important">
               <li>Es la primer cuenta de contratación inmediata en linea.</li>
@@ -49,7 +52,7 @@
             </ul>
           </div>
 
-          <div class="cell text-cell">
+          <div class="cell text-cell wow zoomIn motion-two">
             <h1>Características </h1>
             <ul style="text-align: left !important">
               <li>No requiere un saldo mínimo a mantener.</li>
@@ -59,7 +62,7 @@
             </ul>
           </div>
 
-          <div class="cell text-cell">
+          <div class="cell text-cell wow zoomIn motion-one">
             <h1 class="pink-text">Requisitos </h1>
             <ol style="text-align: left !important">
               <li>Conéctate con tu cuenta de Facebook.</li>
@@ -75,10 +78,10 @@
       <div class="flex-wrap main-color-bg text-white">
         <div class="row center">
 
-          <div class="cell text-cell">
+          <div class="cell text-cell wow slideInUp">
             <h1>¿Estás listo?</h1>
             <h2>Es fácil y en menos de dos (Sí, DOS) tendrás tu Cuenta Hacker</h2>
-            <button class="btn btn-md-pink" style="font-size: 25px;">
+            <button class="btn btn-md-pink wow zoomIn motion-tree" style="font-size: 25px;">
               <span>Abre tu cuenta ahora.</span>
             </button>
           </div>
@@ -134,6 +137,11 @@
       </div>
 
     </div>
+  
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
   </body>
 

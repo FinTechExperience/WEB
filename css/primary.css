@@ -248,3 +248,12 @@ body{
 .btn.red:hover, .btn.red:focus {
   background-color: #c0392b;
 }
+
+.txt-form{
+  font-size: 20px;
+  margin: 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid blue;
+  outline: none;
+}

@@ -37,3 +37,8 @@ html, body {
     padding: 50px;
   }
 }
+
+.wrap-full{
+  height: 100%;
+  padding: 50px;
+}
