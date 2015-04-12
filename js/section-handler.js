@@ -15,3 +15,13 @@ function loadBanca(){
 function loadCredit(){
    document.getElementById("container").innerHTML='<object type="text/html" data="credito.html" ></object>';
 }
+
+function loadBacaModule(){
+   document.getElementById("splash").style.display = "none";
+   document.getElementById("content").style.display = "";
+}
+
+function credit(){
+  var saldo =  document.getElementById("saldo").innerHTML;
+  alert("Lo sentimos, tu saldo es de " + saldo + "\n\nNecesitas tener al menos $5,000 en cuenta para obtener un crédito.");
+}

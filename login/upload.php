@@ -18,11 +18,28 @@ include_once='dbconfig.php';
 
  </head>
 <?php
- $target_path = "uploads/";
-$target_path = $target_path . basename( $_FILES['file']['name']); if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], $target_path)) { echo "El archivo ". basename( $_FILES['uploadedfile']['name']). " ha sido subido";
-} else{
-echo "Ha ocurrido un error, trate de nuevo!";
-}
+if ((($_FILES["file"]["type"] == "image/gif") ||
+    ($_FILES["file"]["type"] == "image/jpeg") ||
+    ($_FILES["file"]["type"] == "image/pjpeg")) &&
+    ($_FILES["file"]["size"] < 20000)) {
+
+    //Si es que hubo un error en la subida, mostrarlo, de la variable $_FILES podemos extraer el valor de [error], que almacena un valor booleano (1 o 0).
+      if ($_FILES["file"]["error"] > 0) {
+        echo $_FILES["file"]["error"] . "";
+      } else {
+        // Si no hubo ningun error, hacemos otra condicion para asegurarnos que el archivo no sea repetido
+        if (file_exists("archivos/" . $_FILES["file"]["name"])) {
+          echo $_FILES["file"]["name"] . " ya existe. ";
+        } else {
+         // Si no es un archivo repetido y no hubo ningun error, procedemos a subir a la carpeta /archivos, seguido de eso mostramos la imagen subida
+          move_uploaded_file($_FILES["file"]["tmp_name"],
+          "archivos/" . $_FILES["file"]["name"]);
+          echo "Archivo Subido ";
+            }
+    } else {
+        // Si el usuario intenta subir algo que no es una imagen o una imagen que pesa mas de 20 KB mostramos este mensaje
+        echo "Archivo no permitido";
+    }
 
 ?>
 

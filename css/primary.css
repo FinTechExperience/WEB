@@ -4,12 +4,12 @@
   /*background: #13426b;*/
   background: #1976D2;
 }
-  
+
 .mid-color-bg{
   /*background: #3f77aa*/
   background: #2196F3;
 }
-  
+
 .lite-color-bg{
   /*background: #9ab6d4;*/
   background: #BBDEFB;
@@ -26,9 +26,9 @@
 .neutral-mid-bg{
   background: #727272
 }
-  
+
 .neutral-soft-bg{
-  background: #b6b6b6 
+  background: #b6b6b6
 }
 
 .white-bg{
@@ -73,7 +73,7 @@ body{
   padding: 10px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;   
+  box-sizing: border-box;
 }
 
 .cell{
@@ -118,7 +118,7 @@ body{
   height: calc(100%-100px;);
 }
 
-@media all and (max-width: 750px) {  
+@media all and (max-width: 750px) {
   .gap{
     height: 585px;
   }
@@ -163,10 +163,10 @@ body{
   outline: none;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  
+
   background-color: #2ecc71;
   color: #ecf0f1;
-  
+
   transition: background-color .3s;
 }
 
@@ -185,19 +185,19 @@ body{
 
 .btn:before {
   content: "";
-  
+
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   display: block;
   width: 0;
   padding-top: 0;
-    
+
   border-radius: 100%;
-  
+
   background-color: rgba(236, 240, 241, .3);
-  
+
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -208,7 +208,7 @@ body{
 .btn:active:before {
   width: 120%;
   padding-top: 120%;
-  
+
   transition: width .2s ease-out, padding-top .2s ease-out;
 }
 
@@ -256,4 +256,16 @@ body{
   background: none;
   border-bottom: 1px solid blue;
   outline: none;
+  color: white;
+}
+
+.table{
+  border: 0px;
+}
+
+.table thead{
+  background: #FF4081;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
 }
